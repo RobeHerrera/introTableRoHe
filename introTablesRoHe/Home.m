@@ -9,7 +9,8 @@
 #import "Home.h"
 
 @interface Home ()
-
+@property NSMutableArray *stuffNames;
+@property NSMutableArray *stuffmgs;
 @end
 
 @implementation Home
@@ -27,10 +28,10 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-    self.avengerNames   = [[NSMutableArray alloc] initWithObjects: @"Capitán América", @"Iron Man", @"Viuda Negra", @"Hulk", @"Thor", @"Hombre Araña", nil];
+   /* self.avengerNames   = [[NSMutableArray alloc] initWithObjects: @"Capitán América", @"Iron Man", @"Viuda Negra", @"Hulk", @"Thor", @"Hombre Araña", nil];
     
     self.avengerImgs   = [[NSMutableArray alloc] initWithObjects: @"captain.png", @"ironman.png", @"blackwidow.png", @"hulk.png", @"thor.png", @"spiderman.png", nil];
-}
+*/}
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods
 /**********************************************************************************************/
