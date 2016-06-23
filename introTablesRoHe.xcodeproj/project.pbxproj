@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B01048A1D1C726C009E39C2 /* cellAmande.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0104881D1C726C009E39C2 /* cellAmande.m */; };
+		2B01048B1D1C726C009E39C2 /* cellAmande.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B0104891D1C726C009E39C2 /* cellAmande.xib */; };
 		2BE2A60C1D1C556E00FE62D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A60B1D1C556E00FE62D0 /* main.m */; };
 		2BE2A60F1D1C556E00FE62D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A60E1D1C556E00FE62D0 /* AppDelegate.m */; };
 		2BE2A6121D1C556E00FE62D0 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A6111D1C556E00FE62D0 /* Start.m */; };
@@ -25,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0104871D1C726C009E39C2 /* cellAmande.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellAmande.h; sourceTree = "<group>"; };
+		2B0104881D1C726C009E39C2 /* cellAmande.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellAmande.m; sourceTree = "<group>"; };
+		2B0104891D1C726C009E39C2 /* cellAmande.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellAmande.xib; sourceTree = "<group>"; };
 		2BE2A6071D1C556E00FE62D0 /* introTablesRoHe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = introTablesRoHe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE2A60B1D1C556E00FE62D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BE2A60D1D1C556E00FE62D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +65,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0104861D1C7229009E39C2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2B0104871D1C726C009E39C2 /* cellAmande.h */,
+				2B0104881D1C726C009E39C2 /* cellAmande.m */,
+				2B0104891D1C726C009E39C2 /* cellAmande.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		2BE2A5FE1D1C556E00FE62D0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,7 @@
 			children = (
 				2BE2A6241D1C559800FE62D0 /* Main */,
 				2BE2A6251D1C55A000FE62D0 /* Controller */,
+				2B0104861D1C7229009E39C2 /* Cells */,
 				2BE2A62C1D1C691B00FE62D0 /* imgs */,
 				2BE2A6131D1C556E00FE62D0 /* Main.storyboard */,
 				2BE2A6191D1C556E00FE62D0 /* Assets.xcassets */,
@@ -197,6 +213,7 @@
 				2BE2A6511D1C6A6000FE62D0 /* esclava.jpg in Resources */,
 				2BE2A64D1D1C6A6000FE62D0 /* anillos.jpg in Resources */,
 				2BE2A6501D1C6A6000FE62D0 /* dije.jpg in Resources */,
+				2B01048B1D1C726C009E39C2 /* cellAmande.xib in Resources */,
 				2BE2A64E1D1C6A6000FE62D0 /* aretes.jpg in Resources */,
 				2BE2A61D1D1C556E00FE62D0 /* LaunchScreen.storyboard in Resources */,
 				2BE2A61A1D1C556E00FE62D0 /* Assets.xcassets in Resources */,
@@ -216,6 +233,7 @@
 				2BE2A62B1D1C5F0200FE62D0 /* Declarations.m in Sources */,
 				2BE2A60F1D1C556E00FE62D0 /* AppDelegate.m in Sources */,
 				2BE2A60C1D1C556E00FE62D0 /* main.m in Sources */,
+				2B01048A1D1C726C009E39C2 /* cellAmande.m in Sources */,
 				2BE2A6551D1C6E0900FE62D0 /* Home.m in Sources */,
 				2BE2A6281D1C5DE600FE62D0 /* Intro.m in Sources */,
 			);
@@ -368,6 +386,7 @@
 				2BE2A6231D1C556E00FE62D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
