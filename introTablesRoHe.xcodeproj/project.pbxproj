@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2BE2A60C1D1C556E00FE62D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A60B1D1C556E00FE62D0 /* main.m */; };
 		2BE2A60F1D1C556E00FE62D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A60E1D1C556E00FE62D0 /* AppDelegate.m */; };
-		2BE2A6121D1C556E00FE62D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A6111D1C556E00FE62D0 /* ViewController.m */; };
+		2BE2A6121D1C556E00FE62D0 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A6111D1C556E00FE62D0 /* Start.m */; };
 		2BE2A6151D1C556E00FE62D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2A6131D1C556E00FE62D0 /* Main.storyboard */; };
 		2BE2A6181D1C556E00FE62D0 /* introTablesRoHe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BE2A6161D1C556E00FE62D0 /* introTablesRoHe.xcdatamodeld */; };
 		2BE2A61A1D1C556E00FE62D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE2A6191D1C556E00FE62D0 /* Assets.xcassets */; };
@@ -21,8 +21,8 @@
 		2BE2A60B1D1C556E00FE62D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BE2A60D1D1C556E00FE62D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BE2A60E1D1C556E00FE62D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2BE2A6101D1C556E00FE62D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2BE2A6111D1C556E00FE62D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2BE2A6101D1C556E00FE62D0 /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		2BE2A6111D1C556E00FE62D0 /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		2BE2A6141D1C556E00FE62D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BE2A6171D1C556E00FE62D0 /* introTablesRoHe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = introTablesRoHe.xcdatamodel; sourceTree = "<group>"; };
 		2BE2A6191D1C556E00FE62D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,10 +60,8 @@
 		2BE2A6091D1C556E00FE62D0 /* introTablesRoHe */ = {
 			isa = PBXGroup;
 			children = (
-				2BE2A60D1D1C556E00FE62D0 /* AppDelegate.h */,
-				2BE2A60E1D1C556E00FE62D0 /* AppDelegate.m */,
-				2BE2A6101D1C556E00FE62D0 /* ViewController.h */,
-				2BE2A6111D1C556E00FE62D0 /* ViewController.m */,
+				2BE2A6241D1C559800FE62D0 /* Main */,
+				2BE2A6251D1C55A000FE62D0 /* Controller */,
 				2BE2A6131D1C556E00FE62D0 /* Main.storyboard */,
 				2BE2A6191D1C556E00FE62D0 /* Assets.xcassets */,
 				2BE2A61B1D1C556E00FE62D0 /* LaunchScreen.storyboard */,
@@ -80,6 +78,24 @@
 				2BE2A60B1D1C556E00FE62D0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BE2A6241D1C559800FE62D0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2BE2A60D1D1C556E00FE62D0 /* AppDelegate.h */,
+				2BE2A60E1D1C556E00FE62D0 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		2BE2A6251D1C55A000FE62D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BE2A6101D1C556E00FE62D0 /* Start.h */,
+				2BE2A6111D1C556E00FE62D0 /* Start.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,7 +129,6 @@
 				TargetAttributes = {
 					2BE2A6061D1C556E00FE62D0 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = PQJ98DU98S;
 					};
 				};
 			};
@@ -153,7 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE2A6121D1C556E00FE62D0 /* ViewController.m in Sources */,
+				2BE2A6121D1C556E00FE62D0 /* Start.m in Sources */,
 				2BE2A6181D1C556E00FE62D0 /* introTablesRoHe.xcdatamodeld in Sources */,
 				2BE2A60F1D1C556E00FE62D0 /* AppDelegate.m in Sources */,
 				2BE2A60C1D1C556E00FE62D0 /* main.m in Sources */,
@@ -266,7 +281,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = introTablesRoHe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RoHe.introTablesRoHe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,7 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = introTablesRoHe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RoHe.introTablesRoHe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
