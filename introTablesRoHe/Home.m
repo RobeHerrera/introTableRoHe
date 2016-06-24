@@ -10,7 +10,7 @@
 
 @interface Home ()
 @property NSMutableArray *stuffNames;
-@property NSMutableArray *stuffmgs;
+@property NSMutableArray *stuffImgs;
 @end
 
 @implementation Home
@@ -28,10 +28,10 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-   /* self.avengerNames   = [[NSMutableArray alloc] initWithObjects: @"Capitán América", @"Iron Man", @"Viuda Negra", @"Hulk", @"Thor", @"Hombre Araña", nil];
+    self.stuffNames   = [[NSMutableArray alloc] initWithObjects: @"Anillos", @"Aretes", @"Collares", @"Dijes", @"Esclavas", @"Juegos", nil];
     
-    self.avengerImgs   = [[NSMutableArray alloc] initWithObjects: @"captain.png", @"ironman.png", @"blackwidow.png", @"hulk.png", @"thor.png", @"spiderman.png", nil];
-*/}
+    self.stuffImgs   = [[NSMutableArray alloc] initWithObjects: @"anillos.jpg", @"aretes.jpg", @"collares.jpg", @"dije.jpg", @"esclava.jpg", @"anillos.jpg", nil];
+}
 /**********************************************************************************************/
 #pragma mark - Table source and delegate methods
 /**********************************************************************************************/
@@ -40,7 +40,7 @@
 }
 //-------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.avengerNames.count;
+    return self.stuffNames.count;
 }
 //-------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -49,21 +49,22 @@
 //-------------------------------------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //Initialize cells
-    cellAvengers *cell = (cellAvengers *)[tableView dequeueReusableCellWithIdentifier:@"cellAvengers"];
+    cellAmande *cell = (cellAmande *)[tableView dequeueReusableCellWithIdentifier:@"cellAmande"];
     
     if (cell == nil) {
-        [tableView registerNib:[UINib nibWithNibName:@"cellAvengers" bundle:nil] forCellReuseIdentifier:@"cellAvengers"];
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cellAvengers"];
+        [tableView registerNib:[UINib nibWithNibName:@"cellAmande" bundle:nil] forCellReuseIdentifier:@"cellAmande"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cellAmande"];
     }
     //Fill cell with info from arrays
-    cell.lblName.text       = self.avengerNames[indexPath.row];
-    cell.imgAvenger.image   = [UIImage imageNamed:self.avengerImgs[indexPath.row]];
+    cell.lblName.text       = self.stuffNames[indexPath.row];
+    cell.imgAmande.image   = [UIImage imageNamed:self.stuffImgs[indexPath.row]];
     
     return cell;
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    self.lblItemSelect.hidden = NO;
+    self.lblItemSelect.text = self.stuffNames[indexPath.row];
 }
 
 @end

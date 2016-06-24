@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import <cellAmande.h>
+#import "cellAmande.h"
 
 @interface Home : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tblAvengers;
+@property (strong, nonatomic) IBOutlet UILabel *lblItemSelect;
 @property (strong, nonatomic) IBOutlet UITableView *tblAmande;
 @end
